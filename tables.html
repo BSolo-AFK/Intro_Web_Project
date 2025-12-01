@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex;">
+    <table border="10" >
+        <tr><td>Qtr 1</td>
+        <td>
+        <table border="10" style="text-align: right;">
+            <tr>
+                <td>January</td>
+
+            </tr>
+            <tr>
+                <td>February</td>
+            </tr>
+            <tr>
+                <td>March</td>
+            </tr>
+        </table>
+    </td>
+    </tr>
+    <tr>
+        <td>Qtr 2</td>
+        <td>April</td>
+    </tr>
+    </table>
+
+    <table style="margin-left: auto; margin-right: auto;" rules="cols" border="1">
+        <caption>Table with Column Borders</caption>
+        <colgroup>
+        <col style="background-color: yellow;">
+        <col>
+        <col span="2" style="background-color: orange;">
+    </colgroup>
+    <tr>
+        <th>ISBN</th>
+        <th style="width: 10px;">Title</th>
+        <th>Price</th>
+        <th>Tax</th>
+    </tr>
+    <tr valign="t">
+        <td>3476896</td>
+        <td>My first HTML</td>
+        <td>$53</td>
+        <!-- <td>$4</td> -->
+    </tr>
+    </table>
+<div style="display: table-column;">
+    <h1>The thead,tbody, and tfoot elements</h1>
+    <table border="1px" frame="lhs">
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>January</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+            <td>February</td>
+            <td>$80</td>
+            </tr>
+        </tbody>
+        <tfoot style="font-style: italic;">
+            <tr>
+            <td>Sum</td>
+            <td>$180</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+</body>
+</html>
