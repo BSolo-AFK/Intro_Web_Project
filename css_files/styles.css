@@ -1,14 +1,14 @@
-html{
-  background-color:  rgba(83,85,58, 0.4);
-
+html {
+  background-color: rgba(83, 85, 58, 0.4);
 }
-html,body {
+html,
+body {
   margin: 0;
-  padding: .5%;
-  height: 100%;   
+  padding: 0.5%;
+  height: 100%;
   font-family: Arial, sans-serif;
   width: clamp(525px, 100vw, 800px);
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 body {
   flex-direction: column;
@@ -25,30 +25,30 @@ body {
   margin-bottom: 1%;
 }
 .Menu {
-  display: inline-block;  
+  display: inline-block;
   padding: 12px 24px;
-  background-color: rgba(83,85,58, 0.4);
+  background-color: rgba(83, 85, 58, 0.4);
   color: white;
-  text-decoration: none;    
+  text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
   transition: 0.2s ease;
 }
 
 .Menu:hover {
-  background-color: #7FB9A5;
-  box-shadow: inset;
+  background-color: #7fb9a5;
+  box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.4);
 }
 
 footer {
-    width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 1%;
 }
-.footer_h3{
+.footer_h3 {
   padding-top: 1%;
   padding-bottom: 0%;
   margin-top: 0%;
@@ -63,51 +63,51 @@ footer {
   align-items: center;
   padding: 0;
 }
-.socials{
+.socials {
   padding: 0%;
 }
 .menu_img {
-  
   width: 100px;
   height: 100px;
   margin: 10px;
 }
-.social_img
-{
+.social_img {
   height: 30px;
   width: 30px;
   border-radius: 30px;
 }
-ul{
+ul {
   padding: 0%;
   margin: 0%;
 }
 
 .content {
   width: clamp(320px, 90vw, 800px);
-  margin: 0 auto; 
+  margin: 0 auto;
   height: 100%;
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 4px 3px;
-  background-image:     linear-gradient(rgba(250,195,103, 0.55), rgba(83,85,58, 0.19)),
-  url("../img/mimosa.png");
-   /* background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(250, 195, 103, 0.55),
+      rgba(83, 85, 58, 0.19)
+    ),
+    url("../img/mimosa.png");
+  /* background-repeat: no-repeat;
   background-size: cover;
   background-position: center; */
   background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
   /* border: 2px solid black; */
 }
-#menu{
+#menu {
   text-align: center;
   margin-bottom: 1%;
   margin-top: 1%;
-  color: #4A3B2A;
-  
+  color: #4a3b2a;
 }
-.cards{
+.cards {
   height: 70%;
   width: 100%;
 
@@ -120,30 +120,32 @@ background-position: center;
 .cards > * {
   position: relative;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.10);
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  /* gap: 1px; */
 }
 
-.left_card{
+.left_card {
   height: 100%;
   width: 50%;
+  margin-right: 2px;
   /* border: 2px solid red; */
-
 }
-.right_card{
+.right_card {
   height: 100%;
   width: 50%;
+  margin-left: 2px;
   /* border: 2px solid blue; */
 }
 
-h5{
+h5 {
   text-align: center;
   margin: 0px;
-  margin-bottom: .5%;
+  margin-bottom: 0.5%;
   font-size: large;
   font-weight: 600;
 }
-hr{
+hr {
   margin: 0px;
 }
 
@@ -153,16 +155,16 @@ hr{
 }
 
 .cards td {
-  padding: .5%;
+  padding: 0.5%;
   vertical-align: top;
 }
-ul{
+ul {
   display: flex;
   gap: 5px;
 }
-li{
+li {
   display: inline;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 
 ul.ingredients li,
@@ -171,13 +173,12 @@ ul.ingredients_options {
   margin: 0;
   padding: 0;
   display: flex;
-  
 }
 .ingredients,
 .ingredients_options {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px; 
+  gap: 6px;
   padding-left: 0;
   list-style: none;
 }
@@ -188,12 +189,77 @@ table {
   display: flex;
   align-items: center;
 }
-.bottom_card{
-  height: 50%;
-  width: 100%;
-  border: 2px solid orange;
-}
-img{
+
+img {
   width: 50px;
   height: 50px;
 }
+
+/* Styles for socials.html */
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-name {
+  font-weight: 600;
+  /* margin-left: 2%; */
+}
+
+.review-stars {
+  display: inline-block;
+  color: gold;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 6px rgba(83, 85, 58, 0.4);
+  border-radius: 6px;
+  /* background-color:whitesmoke; */
+}
+
+.review-text {
+  margin: 0;
+  line-height: 1, 1, 1, 1;
+}
+.bottom_card {
+  height: 50%;
+  margin-top: 1%;
+  padding: 0%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  /* align-content: center; */
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.brunch_specials {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+.brunch_specials li {
+  /* background-color: rgba(83,85,58, 0.4); */
+  color: black;
+  padding: 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+.brunch_specials li:hover {
+  background-color: #7fb9a5;
+  box-shadow: inset;
+}
+/* .cards .left_card tr :hover {
+  background-color: #7fb9a5;
+  box-shadow: inset;
+} */
